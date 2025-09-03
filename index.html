@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Школа №14 им. С. Давлетова — Джалал-Абад</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Inter, Arial, sans-serif;}
+    body{background:#0b1020;color:#e6eef8;min-height:100vh;overflow-x:hidden;}
+    .bg{
+      position:fixed;inset:0;z-index:-1;
+      background:linear-gradient(120deg,#0b1020,#07203a,#0f2740,#0b1020);
+      background-size:300% 300%;
+      animation:move 15s infinite ease;
+    }
+    @keyframes move{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}
+    header{padding:30px;text-align:center;}
+    header h1{font-size:32px;margin-bottom:10px;animation:fadeDown 1s ease;}
+    header p{opacity:0.8;animation:fadeDown 1.4s ease;}
+    nav{margin-top:20px;display:flex;justify-content:center;gap:20px;}
+    nav a{padding:12px 22px;border-radius:10px;text-decoration:none;background:rgba(255,255,255,0.08);color:white;transition:0.3s;}
+    nav a:hover{background:rgba(255,255,255,0.2);}
+    section{max-width:800px;margin:0 auto;padding:60px 20px;animation:fadeUp 1.5s ease;}
+    h2{margin-bottom:15px;font-size:26px;}
+    p{margin-bottom:15px;line-height:1.6;}
+    .gallery{display:flex;flex-wrap:wrap;gap:15px;margin-top:20px;}
+    .gallery img{width:calc(50% - 15px);border-radius:12px;transition:transform 0.3s;cursor:pointer;}
+    .gallery img:hover{transform:scale(1.05);}
+    footer{text-align:center;padding:20px;color:#94a3b8;font-size:14px;}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes fadeDown{from{opacity:0;transform:translateY(-40px)}to{opacity:1;transform:translateY(0)}}
+  </style>
+</head>
+<body>
+  <div class="bg"></div>
+  <header>
+    <h1>Школа №14 им. С. Давлетова</h1>
+    <p>г. Джалал-Абад</p>
+    <nav>
+      <a href="index.html">Главное</a>
+      <a href="radius.html">Отзывы</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>О школе</h2>
+    <p>Школа №14 имени Сатабелда Давлетова в Джалал-Абаде — одно из ведущих образовательных учреждений региона. Здесь создаются все условия для успешного обучения и развития учеников.</p>
+    <p>Школа проводит культурные мероприятия, спортивные соревнования, встречи с общественными деятелями и государственными лидерами.</p>
+
+    <h2>Галерея</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/400x300?text=Школа+1" alt="Школа 1">
+      <img src="https://via.placeholder.com/400x300?text=Школа+2" alt="Школа 2">
+      <img src="https://via.placeholder.com/400x300?text=Школа+3" alt="Школа 3">
+      <img src="https://via.placeholder.com/400x300?text=Школа+4" alt="Школа 4">
+    </div>
+
+    <h2>Контакты</h2>
+    <p>Телефон директора: +996 779 262428</p>
+    <p>Telegram директора: <a href="https://t.me/damira_1968" target="_blank">@damira_1968</a></p>
+    <p>Создатель сайта: Абдувахабов Махди, ученик 7-го класса (<a href="https://t.me/wilighto" target="_blank">@wilighto</a>)</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Школа №14 им. С. Давлетова — Джалал-Абад
+  </footer>
+</body>
+</html>
